@@ -11,8 +11,8 @@ const App = () => {
         {/* Do not remove the main div */}
         <Router>
           <div className="navbar">
-        <Link to="/">Home</Link>
-        <Link to="/admin">Admin</Link>
+        <a><Link to="/">Home</Link></a>
+       <a> <Link to="/admin">Admin Panel</Link></a>
       </div>
           <Routes>
             <Route path="/" element={<ProductList/>}/>

@@ -57,7 +57,7 @@ const ProductDetail = () => {
             <p>{product.name}</p>
             <p>{product.color}</p>
             <p>Price :{product.price}</p>
-            <Link to="/">Other Products</Link>
+            <Link to="/" className="btn">Other Products</Link>
         </div>  
       </div>
         </div>

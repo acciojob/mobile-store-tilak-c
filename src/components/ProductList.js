@@ -58,7 +58,7 @@ const ProductList = () => {
             <div className="price-content">
             <p>Price :{product.price}</p>
             <Link to={`/products/${product.id}`}>
-            <button>Buy</button></Link>
+            <button className="btn">Buy</button></Link>
             </div>
         </div>  
       </div>
