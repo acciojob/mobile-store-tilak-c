@@ -42,7 +42,7 @@ const AdminPanel = () => {
       <h2>Admin Panel</h2>
 
       <div className="admin-links">
-        <Link to="/">🏠 Home</Link>
+        <Link to="/">Home</Link>
       </div>
 
       <div className="form-section">
@@ -91,7 +91,7 @@ const AdminPanel = () => {
             <div className="actions">
               <button className="float-right" onClick={() => handleEdit(p.id)}>Edit</button>
               <button className="float-right" onClick={() => handleDelete(p.id)}>Delete</button>
-              <Link to={`/products/${p.id}`} className="float-right">View</Link>
+             <a><Link to={`/products/${p.id}`} className="float-right">View</Link></a> 
             </div>
           </div>
         ))}
