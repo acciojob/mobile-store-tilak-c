@@ -1,0 +1,11 @@
+.container{
+    display:flex;
+    border:1px solid black;
+    width:400px;
+    flex-wrap:wrap;
+}
+.price-content{
+    display:flex;
+    padding:10px;
+    margin:10px;
+}

@@ -1,11 +1,25 @@
 
 import React from "react";
-import './../styles/App.css';
-
+import '../styles/App.css';
+import ProductList from './ProductList'
+import ProductDetail from './ProductDetail'
+import { BrowserRouter as Router,Routes,Route,Link } from "react-router-dom";
+import AdminPanel from "./AdminPanel.js";
 const App = () => {
   return (
     <div>
         {/* Do not remove the main div */}
+        <Router>
+          <div className="navbar">
+        <Link to="/">Home</Link>
+        <Link to="/admin">Admin</Link>
+      </div>
+          <Routes>
+            <Route path="/" element={<ProductList/>}/>
+            <Route path="/products/:id" element={<ProductDetail/>}/>
+            <Route path="/admin" element={<AdminPanel/>}/>
+          </Routes>
+        </Router>
     </div>
   )
 }
